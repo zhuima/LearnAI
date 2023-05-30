@@ -161,7 +161,7 @@ export default function Testimonial() {
           fontWeight={"bold"}
           color={useColorModeValue("gray.700", "gray.50")}
         >
-          You're in good company
+          You are in good company
         </chakra.h1>
         <chakra.h2
           margin={"auto"}
