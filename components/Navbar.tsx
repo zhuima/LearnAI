@@ -138,10 +138,7 @@ const DesktopNav = () => {
         <Box key={navItem.label}>
           <Popover trigger={"hover"} placement={"bottom-start"}>
             <PopoverTrigger>
-              <Link
-                href="/"
-                color={linkColor}
-              >
+              <Link href="/" color={linkColor}>
                 {navItem.label}
               </Link>
             </PopoverTrigger>
@@ -171,10 +168,7 @@ const DesktopNav = () => {
 
 const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
   return (
-    <Link
-      href="/"
-      _hover={{ bg: useColorModeValue("pink.50", "gray.900") }}
-    >
+    <Link href={href}>
       <Stack direction={"row"} align={"center"}>
         <Box>
           <Text
@@ -224,7 +218,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
       <Flex
         py={2}
         as={Link}
-        href={href ?? "#"}
+        href={href ?? "/"}
         justify={"space-between"}
         align={"center"}
         _hover={{
@@ -259,7 +253,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
         >
           {children &&
             children.map((child) => (
-              <Link key={child.label} py={2} href={child.href}>
+              <Link href="/" key={child.label}>
                 {child.label}
               </Link>
             ))}
