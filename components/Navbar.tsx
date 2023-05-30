@@ -168,7 +168,7 @@ const DesktopNav = () => {
 
 const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
   return (
-    <Link href={href}>
+    <Link href="/">
       <Stack direction={"row"} align={"center"}>
         <Box>
           <Text
