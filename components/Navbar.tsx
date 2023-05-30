@@ -1,3 +1,4 @@
+import Link from "next/link";
 import {
   Box,
   Flex,
@@ -7,7 +8,6 @@ import {
   Stack,
   Collapse,
   Icon,
-  Link,
   Popover,
   PopoverTrigger,
   PopoverContent,
@@ -57,6 +57,7 @@ export default function Navbar() {
         borderStyle={"solid"}
         borderColor={useColorModeValue("gray.200", "gray.900")}
         align={"center"}
+        align-items={"center"}
       >
         <Flex
           flex={{ base: 1, md: "auto" }}
@@ -72,14 +73,21 @@ export default function Navbar() {
             aria-label={"Toggle Navigation"}
           />
         </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
+
+        <Flex
+          flex={{ base: 1 }}
+          justify={{ base: "center", md: "start" }}
+          align={"center"}
+        >
           <Text
             textAlign={useBreakpointValue({ base: "center", md: "left" })}
             fontFamily={"heading"}
             color={useColorModeValue("gray.800", "white")}
           >
-            <Button as="a" href="/" variant={"link"}>
-              <Logo />
+            <Button>
+              <Link href="/">
+                <Logo />
+              </Link>
             </Button>
           </Text>
 
@@ -94,28 +102,20 @@ export default function Navbar() {
           direction={"row"}
           spacing={6}
         >
-          <Button
-            as={"a"}
-            fontSize={"sm"}
-            fontWeight={400}
-            variant={"link"}
-            href="/signin"
-          >
-            Sign In
+          <Button fontSize={"sm"} fontWeight={400}>
+            <Link href="/signin">Sign In</Link>
           </Button>
           <Button
-            as={"a"}
             display={{ base: "none", md: "inline-flex" }}
             fontSize={"sm"}
             fontWeight={600}
             color={"white"}
             bg={"pink.400"}
-            href="/signup"
             _hover={{
               bg: "pink.300",
             }}
           >
-            Sign Up
+            <Link href="/signup">Sign Up</Link>
           </Button>
         </Stack>
       </Flex>
