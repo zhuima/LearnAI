@@ -14,7 +14,7 @@ const testimonials = [
     name: "邓博.",
     role: "专注AI和人工智能领域的专家",
     content:
-      "邓博是帝国学院博士毕业，回国后先后在国内知名互联网企业担任VP、CTO等角色，在人工智能、深度学习、AI等领域有很深的额造诣",
+      "邓博是帝国学院博士毕业，回国后先后在国内知名互联网企业担任VP、CTO等角色，在人工智能、深度学习、AI等领域有很深的造诣",
     avatar:
       "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80",
   },
