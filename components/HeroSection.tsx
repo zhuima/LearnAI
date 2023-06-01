@@ -9,6 +9,7 @@ import {
   Icon,
   useColorModeValue,
   createIcon,
+  Link,
 } from "@chakra-ui/react";
 
 export default function HeroSection() {
@@ -55,7 +56,13 @@ export default function HeroSection() {
                 bg: "green.500",
               }}
             >
-              立即体验
+              <Link
+                href={"https://chat.plumsai.com/#/"}
+                target="_blank"
+                style={{ textDecoration: "none" }}
+              >
+                立即体验
+              </Link>
             </Button>
             {/* <Button variant={"link"} colorScheme={"blue"} size={"sm"}>
               Learn more

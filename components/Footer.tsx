@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Box,
   Container,
@@ -129,7 +131,15 @@ export default function Footer() {
           <Logo />
         </Flex>
         <Text pt={6} fontSize={"sm"} textAlign={"center"}>
-          © 2023 plumsai.com. All rights reserved
+          © 2023{" "}
+          <Link
+            href={"https://ai.plumsai.com/"}
+            target="_blank"
+            style={{ textDecoration: "none" }}
+          >
+            plumsai.com
+          </Link>
+          . All rights reserved
         </Text>
       </Box>
     </Box>

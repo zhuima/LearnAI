@@ -1,14 +1,8 @@
-"use client";
-import HeroSection from "@/components/HeroSection";
-import Features from "@/components/Features";
-import Testimonial from "@/components/Testimonial";
-
+import CHome from "@/components/Home";
 export default function Home() {
   return (
     <main>
-      <HeroSection />
-      <Features />
-      <Testimonial />
+      <CHome />
     </main>
   );
 }
