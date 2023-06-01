@@ -2,6 +2,7 @@ import {
   Box,
   Container,
   Link,
+  Image,
   SimpleGrid,
   Stack,
   Text,
@@ -48,46 +49,54 @@ export default function Footer() {
       <Container as={Stack} maxW={"6xl"} py={10}>
         <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
           <Stack align={"flex-start"}>
-            <ListHeader>Product</ListHeader>
-            <Link href={"#"}>Overview</Link>
+            <ListHeader>我们的产品</ListHeader>
+            <Link href={"https://chat.plumsai.com/#/"}>AI 助手</Link>
             <Stack direction={"row"} align={"center"} spacing={2}>
-              <Link href={"#"}>Features</Link>
+              <Link href={"https://nav.plumsai.com/"}>AI 导航</Link>
               <Tag
                 size={"sm"}
-                bg={useColorModeValue("green.300", "green.800")}
+                // bg={useColorModeValue("green.300", "green.800")}
                 ml={2}
-                color={"white"}
+                // color={"white"}
               >
-                New
+                🔥
               </Tag>
             </Stack>
-            <Link href={"#"}>Tutorials</Link>
+            {/* <Link href={"#"}>Tutorials</Link>
             <Link href={"#"}>Pricing</Link>
-            <Link href={"#"}>Releases</Link>
+            <Link href={"#"}>Releases</Link> */}
           </Stack>
           <Stack align={"flex-start"}>
-            <ListHeader>Company</ListHeader>
-            <Link href={"#"}>About Us</Link>
+            <ListHeader>联系我们</ListHeader>
+            <Image
+              rounded={"md"}
+              width={"120px"}
+              height={"auto"}
+              alt={"wechat image"}
+              src={"./wechat.png"}
+              objectFit={"cover"}
+            />
+            {/* <Link href={"#"}>About Us</Link>
             <Link href={"#"}>Press</Link>
             <Link href={"#"}>Careers</Link>
             <Link href={"#"}>Contact Us</Link>
-            <Link href={"#"}>Partners</Link>
+            <Link href={"#"}>Partners</Link> */}
           </Stack>
           <Stack align={"flex-start"}>
-            <ListHeader>Legal</ListHeader>
-            <Link href={"#"}>Cookies Policy</Link>
-            <Link href={"#"}>Privacy Policy</Link>
-            <Link href={"#"}>Terms of Service</Link>
-            <Link href={"#"}>Law Enforcement</Link>
-            <Link href={"#"}>Status</Link>
+            <ListHeader>服务范围</ListHeader>
+            <Link href={"#"}>AI 培训</Link>
+            <Link href={"#"}>企业 AI 转型规划</Link>
+            <Link href={"#"}>AI 模型训练</Link>
+            {/* <Link href={"#"}>Law Enforcement</Link>
+            <Link href={"#"}>Status</Link> */}
           </Stack>
           <Stack align={"flex-start"}>
-            <ListHeader>Follow Us</ListHeader>
-            <Link href={"#"}>Facebook</Link>
-            <Link href={"#"}>Twitter</Link>
-            <Link href={"#"}>Dribbble</Link>
+            <ListHeader>友情链接</ListHeader>
+            <Link href={"https://openai.com/"}>Openai</Link>
+            <Link href={"https://www.midjourney.com/app/"}>Midjourney</Link>
+            {/* <Link href={"#"}>Dribbble</Link>
             <Link href={"#"}>Instagram</Link>
-            <Link href={"#"}>LinkedIn</Link>
+            <Link href={"#"}>LinkedIn</Link> */}
           </Stack>
         </SimpleGrid>
       </Container>
@@ -112,7 +121,7 @@ export default function Footer() {
           <Logo />
         </Flex>
         <Text pt={6} fontSize={"sm"} textAlign={"center"}>
-          © 2023 Zhuima. All rights reserved
+          © 2023 plumsai.com. All rights reserved
         </Text>
       </Box>
     </Box>

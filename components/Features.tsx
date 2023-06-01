@@ -56,12 +56,11 @@ export default function SplitWithImage() {
             alignSelf={"flex-start"}
             rounded={"md"}
           >
-            Our Story
+            我们的故事
           </Text>
-          <Heading>A digital Product design agency</Heading>
+          <Heading>一群有担当有活力的年轻人</Heading>
           <Text color={"gray.500"} fontSize={"lg"}>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore
+            我们来自不同的领域，但是对AI的热爱让我们聚到了一起，我们希望能够用AI的力量来改变世界，让世界变得更美好。我们能做的
           </Text>
           <Stack
             spacing={4}
@@ -76,19 +75,19 @@ export default function SplitWithImage() {
                 <Icon as={IoAnalyticsSharp} color={"yellow.500"} w={5} h={5} />
               }
               iconBg={useColorModeValue("yellow.100", "yellow.900")}
-              text={"Business Planning"}
+              text={"AI 培训"}
             />
             <Feature
               icon={<Icon as={IoLogoBitcoin} color={"green.500"} w={5} h={5} />}
               iconBg={useColorModeValue("green.100", "green.900")}
-              text={"Financial Planning"}
+              text={"模型构建"}
             />
             <Feature
               icon={
                 <Icon as={IoSearchSharp} color={"purple.500"} w={5} h={5} />
               }
               iconBg={useColorModeValue("purple.100", "purple.900")}
-              text={"Market Analysis"}
+              text={"工具交付"}
             />
           </Stack>
         </Stack>

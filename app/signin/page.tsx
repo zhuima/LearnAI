@@ -17,26 +17,26 @@ export default function SigninPage() {
     <Stack minH={"100vh"} direction={{ base: "column", md: "row" }}>
       <Flex p={8} flex={1} align={"center"} justify={"center"}>
         <Stack spacing={4} w={"full"} maxW={"md"}>
-          <Heading fontSize={"2xl"}>Sign in to your account</Heading>
+          <Heading fontSize={"2xl"}>欢迎回来，请登录</Heading>
           <FormControl id="email">
-            <FormLabel>Email address</FormLabel>
-            <Input type="email" />
+            <FormLabel>邮箱地址</FormLabel>
+            <Input type="email" placeholder="请输入邮箱地址" />
           </FormControl>
           <FormControl id="password">
-            <FormLabel>Password</FormLabel>
-            <Input type="password" />
+            <FormLabel>密码</FormLabel>
+            <Input type="password" placeholder="请输入密码" />
           </FormControl>
           <Stack spacing={6}>
-            <Stack
+            {/* <Stack
               direction={{ base: "column", sm: "row" }}
               align={"start"}
               justify={"space-between"}
             >
               <Checkbox>Remember me</Checkbox>
               <Link color={"blue.500"}>Forgot password?</Link>
-            </Stack>
+            </Stack> */}
             <Button colorScheme={"blue"} variant={"solid"}>
-              Sign in
+              登陆
             </Button>
           </Stack>
         </Stack>

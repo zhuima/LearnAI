@@ -103,9 +103,9 @@ export default function Navbar() {
           spacing={6}
         >
           <Button fontSize={"sm"} fontWeight={400}>
-            <Link href="/signin">Sign In</Link>
+            <Link href="/signin">登陆</Link>
           </Button>
-          <Button
+          {/* <Button
             display={{ base: "none", md: "inline-flex" }}
             fontSize={"sm"}
             fontWeight={600}
@@ -115,8 +115,8 @@ export default function Navbar() {
               bg: "pink.300",
             }}
           >
-            <Link href="/signup">Sign Up</Link>
-          </Button>
+            <Link href="/signup">注册</Link>
+          </Button> */}
         </Stack>
       </Flex>
 
@@ -138,7 +138,7 @@ const DesktopNav = () => {
         <Box key={navItem.label}>
           <Popover trigger={"hover"} placement={"bottom-start"}>
             <PopoverTrigger>
-              <Link href="/" color={linkColor}>
+              <Link href={navItem.link} color={linkColor} replace>
                 {navItem.label}
               </Link>
             </PopoverTrigger>
@@ -265,6 +265,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
 
 interface NavItem {
   label: string;
+  link: string;
   subLabel?: string;
   children?: Array<NavItem>;
   href?: string;
@@ -272,41 +273,43 @@ interface NavItem {
 
 const NAV_ITEMS: Array<NavItem> = [
   {
-    label: "Inspiration",
-    children: [
-      {
-        label: "Explore Design Work",
-        subLabel: "Trending Design to inspire you",
-        href: "#",
-      },
-      {
-        label: "New & Noteworthy",
-        subLabel: "Up-and-coming Designers",
-        href: "#",
-      },
-    ],
+    label: "AI 助手",
+    link: "https://chat.plumsai.com/#/",
+    // children: [
+    //   {
+    //     label: "Explore Design Work",
+    //     subLabel: "Trending Design to inspire you",
+    //     href: "#",
+    //   },
+    //   {
+    //     label: "New & Noteworthy",
+    //     subLabel: "Up-and-coming Designers",
+    //     href: "#",
+    //   },
+    // ],
   },
   {
-    label: "Find Work",
-    children: [
-      {
-        label: "Job Board",
-        subLabel: "Find your dream design job",
-        href: "#",
-      },
-      {
-        label: "Freelance Projects",
-        subLabel: "An exclusive list for contract work",
-        href: "#",
-      },
-    ],
+    label: "AI 导航",
+    link: "https://nav.plumsai.com/#/",
+    // children: [
+    //   {
+    //     label: "Job Board",
+    //     subLabel: "Find your dream design job",
+    //     href: "#",
+    //   },
+    //   {
+    //     label: "Freelance Projects",
+    //     subLabel: "An exclusive list for contract work",
+    //     href: "#",
+    //   },
+    // ],
   },
-  {
-    label: "Learn Design",
-    href: "#",
-  },
-  {
-    label: "Hire Designers",
-    href: "#",
-  },
+  // {
+  //   label: "Learn Design",
+  //   href: "#",
+  // },
+  // {
+  //   label: "Hire Designers",
+  //   href: "#",
+  // },
 ];

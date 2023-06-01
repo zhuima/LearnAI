@@ -33,16 +33,12 @@ export default function HeroSection() {
             fontSize={{ base: "2xl", sm: "4xl", md: "6xl" }}
             lineHeight={"110%"}
           >
-            Make money from <br />
+            用 AI 打造你的 <br />
             <Text as={"span"} color={"green.400"}>
-              your audience
+              第二大脑
             </Text>
           </Heading>
-          <Text color={"gray.500"}>
-            Monetize your content by charging your most loyal readers and reward
-            them loyalty points. Give back to your loyal readers by granting
-            them access to your pre-releases and sneak-peaks.
-          </Text>
+          <Text color={"gray.500"}>只需8s, 就能实现灵魂的碰撞</Text>
           <Stack
             direction={"column"}
             spacing={3}
@@ -59,11 +55,11 @@ export default function HeroSection() {
                 bg: "green.500",
               }}
             >
-              Get Started
+              立即体验
             </Button>
-            <Button variant={"link"} colorScheme={"blue"} size={"sm"}>
+            {/* <Button variant={"link"} colorScheme={"blue"} size={"sm"}>
               Learn more
-            </Button>
+            </Button> */}
             <Box>
               <Icon
                 as={Arrow}
@@ -81,7 +77,7 @@ export default function HeroSection() {
                 top={"-15px"}
                 transform={"rotate(10deg)"}
               >
-                Starting at $15/mo
+                现在就去
               </Text>
             </Box>
           </Stack>
