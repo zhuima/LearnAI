@@ -253,7 +253,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
         >
           {children &&
             children.map((child) => (
-              <Link href="/" key={child.label}>
+              <Link href={child.link} key={child.label}>
                 {child.label}
               </Link>
             ))}
