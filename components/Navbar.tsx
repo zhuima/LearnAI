@@ -138,7 +138,7 @@ const DesktopNav = () => {
         <Box key={navItem.label}>
           <Popover trigger={"hover"} placement={"bottom-start"}>
             <PopoverTrigger>
-              <Link href={navItem.link} color={linkColor} replace>
+              <Link href={navItem.link} color={linkColor} target="_blank">
                 {navItem.label}
               </Link>
             </PopoverTrigger>

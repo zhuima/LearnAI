@@ -50,9 +50,13 @@ export default function Footer() {
         <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
           <Stack align={"flex-start"}>
             <ListHeader>我们的产品</ListHeader>
-            <Link href={"https://chat.plumsai.com/#/"}>AI 助手</Link>
+            <Link href={"https://chat.plumsai.com/#/"} target="_blank">
+              AI 助手
+            </Link>
             <Stack direction={"row"} align={"center"} spacing={2}>
-              <Link href={"https://nav.plumsai.com/"}>AI 导航</Link>
+              <Link href={"https://nav.plumsai.com/"} target="_blank">
+                AI 导航
+              </Link>
               <Tag
                 size={"sm"}
                 // bg={useColorModeValue("green.300", "green.800")}
@@ -92,8 +96,12 @@ export default function Footer() {
           </Stack>
           <Stack align={"flex-start"}>
             <ListHeader>友情链接</ListHeader>
-            <Link href={"https://openai.com/"}>Openai</Link>
-            <Link href={"https://www.midjourney.com/app/"}>Midjourney</Link>
+            <Link href={"https://openai.com/"} target="_blank">
+              Openai
+            </Link>
+            <Link href={"https://www.midjourney.com/app/"} target="_blank">
+              Midjourney
+            </Link>
             {/* <Link href={"#"}>Dribbble</Link>
             <Link href={"#"}>Instagram</Link>
             <Link href={"#"}>LinkedIn</Link> */}
