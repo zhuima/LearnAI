@@ -13,7 +13,7 @@ export const metadata = {
   viewport: {
     width: "device-width",
     initialScale: 1,
-    maximumScale: 1,
+    maximumScale: 6,
   },
   themeColor: [
     { media: "(prefers-color-scheme: light)", color: "#fafafa" },

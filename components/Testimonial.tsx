@@ -129,6 +129,7 @@ function TestimonialCard(props: TestimonialCardProps) {
         width={"80px"}
         alignSelf={"center"}
         m={{ base: "0 0 35px 0", md: "0 0 0 50px" }}
+        alt={name}
       />
     </Flex>
   );
