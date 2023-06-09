@@ -16,6 +16,7 @@ import {
   IoSearchSharp,
 } from "react-icons/io5";
 import { ReactElement } from "react";
+import { useAos } from "../hooks/useAos";
 
 interface FeatureProps {
   text: string;
@@ -24,6 +25,7 @@ interface FeatureProps {
 }
 
 const Feature = ({ text, icon, iconBg }: FeatureProps) => {
+  useAos();
   return (
     <Stack direction={"row"} align={"center"}>
       <Flex
@@ -55,11 +57,20 @@ export default function SplitWithImage() {
             p={2}
             alignSelf={"flex-start"}
             rounded={"md"}
+            data-aos="fade-right"
+            data-aos-duration="100"
           >
             我们的故事
           </Text>
-          <Heading>一群有担当有活力的年轻人</Heading>
-          <Text color={"gray.500"} fontSize={"lg"}>
+          <Heading data-aos="fade-right" data-aos-duration="1000">
+            一群有担当有活力的年轻人
+          </Heading>
+          <Text
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            color={"gray.500"}
+            fontSize={"lg"}
+          >
             我们来自不同的领域，但是对AI的热爱让我们聚到了一起，我们希望能够用AI的力量来改变世界，让世界变得更美好。我们能做的
           </Text>
           <Stack
@@ -69,6 +80,8 @@ export default function SplitWithImage() {
                 borderColor={useColorModeValue("gray.100", "gray.700")}
               />
             }
+            data-aos="fade-right"
+            data-aos-duration="2000"
           >
             <Feature
               icon={
@@ -91,7 +104,7 @@ export default function SplitWithImage() {
             />
           </Stack>
         </Stack>
-        <Flex>
+        <Flex data-aos="fade-left" data-aos-duration="2000">
           <Image
             rounded={"md"}
             alt={"feature image"}
