@@ -26,5 +26,8 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.9.0",
     "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "@types/aos": "^3.0.4"
   }
 }
